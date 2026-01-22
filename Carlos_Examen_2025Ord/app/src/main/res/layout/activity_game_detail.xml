@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    activity_game_detail.xml - DETALLE DE UN PARTIDO
+    ============================================================================
+
+    Estructura pedida en el examen:
+
+    ____________________________________________________
+    |     Memphis Grizzlies @ Los Angeles Lakers       |  <- Título
+    +___________________________________________________-+
+    |              10      -      47                   |  <- Marcador
+    +___________________________________________________+
+    |    +1  +2  +3         |        +1  +2  +3       |  <- Botones
+    +___________________________________________________-+
+
+    - Equipo visitante (AWAY) a la izquierda
+    - Equipo local (HOME) a la derecha
+    - Botones +1, +2, +3 para cada equipo
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- ====================================================================
+         TÍTULO: "Away Team @ Home Team"
+         ==================================================================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <!-- Nombre equipo visitante -->
+        <TextView
+            android:id="@+id/txt_away_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Separador @ -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_separator"
+            android:textSize="18sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"/>
+
+        <!-- Nombre equipo local -->
+        <TextView
+            android:id="@+id/txt_home_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- ====================================================================
+         MARCADOR: "Away Score - Home Score"
+         ==================================================================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <!-- Puntuación visitante -->
+        <TextView
+            android:id="@+id/txt_away_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+
+        <!-- Separador - -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_separator"
+            android:textSize="48sp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"/>
+
+        <!-- Puntuación local -->
+        <TextView
+            android:id="@+id/txt_home_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- ====================================================================
+         BOTONES DE PUNTUACIÓN
+         ==================================================================== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- ================================================================
+             BOTONES EQUIPO VISITANTE (AWAY) - Izquierda
+             ================================================================ -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_away_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_plus_1"/>
+
+            <Button
+                android:id="@+id/btn_away_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_plus_2"/>
+
+            <Button
+                android:id="@+id/btn_away_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_plus_3"/>
+        </LinearLayout>
+
+        <!-- ================================================================
+             BOTONES EQUIPO LOCAL (HOME) - Derecha
+             ================================================================ -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_home_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_plus_1"/>
+
+            <Button
+                android:id="@+id/btn_home_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_plus_2"/>
+
+            <Button
+                android:id="@+id/btn_home_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_plus_3"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    row_product.xml - Fila del listado
+    ============================================================================
+    
+    Estructura:
+    +--------------------------------------------------------+
+    | Smartphone X1    CPU, RAM, Pantalla           €459.99  |
+    +--------------------------------------------------------+
+    
+    - Nombre producto (izquierda)
+    - Lista componentes (centro, flexible)
+    - Precio total (derecha)
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!-- Nombre del producto (izquierda, ancho fijo) -->
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
+    <!-- Lista de componentes (centro, flexible) -->
+    <TextView
+        android:id="@+id/txt_components"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <!-- Precio total (derecha, ancho fijo) -->
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#4CAF50"/>
+
+</LinearLayout>

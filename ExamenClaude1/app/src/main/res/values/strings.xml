@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ExamenClaude1</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_guests">Comensales</string>
+    <string name="btn_reserve">Reservar</string>
+    <string name="status_available">Disponible</string>
+    <string name="status_no_available">Ocupada</string>
+    <string name="not_available">Lo siento pero la mesa no esta disponible</string>
+    <string name="error_network">Error de conexion</string>
+    <string name="error_guests_empty">Error, campo de Nombre está vacio</string>
+    <string name="error_guests_exceeded">Error: Demasiados comensales</string>
+    <string name="reservation_success">Reserva confirmada para %s</string>
+    <string name="error_name_required">El nombre es obligatorio</string>
+    <string name="error_guests_required">El número de comensales es obligatorio</string>
+    <string name="error_guests_exceeded_server">Demasiados comensales para esta mesa</string>
+    <string name="error_table_not_available_server">La mesa ya no está disponible</string>
+
+
+
+</resources>

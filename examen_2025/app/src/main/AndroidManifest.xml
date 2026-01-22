@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    AndroidManifest.xml - EXAMEN 2025
+    ============================================================================
+    
+    IMPORTANTE:
+    1. Permiso INTERNET obligatorio para peticiones HTTP
+    2. usesCleartextTraffic="true" para permitir HTTP (no solo HTTPS)
+    3. Declarar TODAS las Activities
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.unavarra.tlm.examen_25_XX">
+    
+    <!-- ====================================================================
+         PERMISO INTERNET - SIN ESTO NO FUNCIONAN LAS PETICIONES HTTP
+         ==================================================================== -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        
+        <!-- Activity principal: Lista de partidos -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Activity de detalle: Ver y actualizar puntuación de un partido -->
+        <activity android:name=".GameDetailActivity" />
+        
+    </application>
+</manifest>

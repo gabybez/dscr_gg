@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    activity_main.xml - LISTADO DE LIBROS
+    ============================================================================
+
+    Contiene un ListView que mostrará todos los libros
+    Cada fila se define en row_book.xml y se gestiona con BookAdapter.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+        ListView: Muestra una lista vertical de elementos.
+        El Adapter (BookAdapter) controla qué se muestra en cada fila.
+    -->
+    <ListView
+        android:id="@+id/list_books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

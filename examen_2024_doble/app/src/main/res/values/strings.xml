@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tienda Electrónica</string>
+    
+    <!-- Toast al pulsar producto -->
+    <string name="toast_components">El %s tiene %d componentes</string>
+    
+    <!-- Formato precio -->
+    <string name="price_format">€%.2f</string>
+    
+    <!-- Errores -->
+    <string name="error_network">Error de conexión</string>
+</resources>

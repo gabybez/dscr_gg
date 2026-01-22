@@ -1,0 +1,46 @@
+/*
+ * ============================================================================
+ * build.gradle - EXAMEN 2017
+ * ============================================================================
+ * Aquí añadimos las dependencias (librerías externas).
+ * 
+ * Para este examen necesitamos:
+ * - AsyncHttpClient: para hacer peticiones HTTP
+ * - Gson: para parsear JSON
+ */
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'es.unavarra.tlm.examen_17_XX'
+    compileSdk 33
+    
+    defaultConfig {
+        applicationId "es.unavarra.tlm.examen_17_XX"
+        minSdk 19        // API 19 como pide el enunciado
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    
+    // ========================================================================
+    // LIBRERÍA HTTP - Para hacer peticiones GET/POST/PUT al servidor
+    // ========================================================================
+    implementation 'com.loopj.android:android-async-http:1.4.11'
+    
+    // ========================================================================
+    // LIBRERÍA GSON - Para convertir JSON <-> Objetos Java
+    // ========================================================================
+    implementation 'com.google.code.gson:gson:2.10.1'
+}

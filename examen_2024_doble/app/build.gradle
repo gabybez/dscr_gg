@@ -1,0 +1,37 @@
+/*
+ * ============================================================================
+ * build.gradle - EXAMEN 2024 (Peticiones anidadas)
+ * ============================================================================
+ */
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'es.unavarra.tlm.examen_24_XX'
+    compileSdk 33
+    
+    defaultConfig {
+        applicationId "es.unavarra.tlm.examen_24_XX"
+        minSdk 30
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    
+    // AsyncHttpClient - Peticiones HTTP
+    implementation 'com.loopj.android:android-async-http:1.4.11'
+    
+    // Gson - JSON <-> Objetos Java
+    implementation 'com.google.code.gson:gson:2.10.1'
+}

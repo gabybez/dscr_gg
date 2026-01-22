@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    LAYOUT: activity_main.xml
+    ============================================================================
+    Este es el layout principal de la aplicación de votaciones.
+    
+    CONCEPTOS CLAVE:
+    - LinearLayout: Organiza elementos en línea (vertical u horizontal)
+    - android:orientation="vertical" -> Los elementos van uno debajo de otro
+    - match_parent: Ocupa todo el espacio disponible del padre
+    - wrap_content: Ocupa solo el espacio necesario para el contenido
+    
+    IMPORTANTE: 
+    - Todos los textos están en @string/xxx (valores en strings.xml)
+    - Los IDs se crean con @+id/nombre y se referencian con @id/nombre
+    ============================================================================
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!--
+        ========================================================================
+        SECCIÓN 1: TÍTULO DE LA APLICACIÓN
+        ========================================================================
+        TextView: Widget para mostrar texto (solo lectura)
+        
+        Atributos importantes:
+        - android:text: El texto a mostrar (usamos @string para internacionalización)
+        - android:textSize: Tamaño del texto en sp (scale-independent pixels)
+        - android:textStyle: Estilo del texto (bold, italic, normal)
+        - android:layout_marginBottom: Margen inferior para separar del siguiente elemento
+    -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!--
+        ========================================================================
+        SECCIÓN 2: DESCRIPCIÓN PARA EL USUARIO
+        ========================================================================
+        Instrucciones que explican qué debe hacer el usuario.
+    -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/room_description"
+        android:layout_marginBottom="8dp"/>
+
+    <!--
+        ========================================================================
+        SECCIÓN 3: CAMPO DE ENTRADA (ROOM NUMBER)
+        ========================================================================
+        EditText: Campo de entrada de texto editable por el usuario
+        
+        Atributos importantes:
+        - android:hint: Texto de placeholder que desaparece al escribir
+        - android:inputType="number": IMPORTANTE - Solo permite números (teclado numérico)
+                                      Esto resuelve el EXTRA 1 del examen
+        
+        Otros inputType comunes:
+        - text: Texto normal
+        - textPassword: Contraseña (oculta caracteres)
+        - textEmailAddress: Email (muestra @ fácilmente)
+        - phone: Número de teléfono
+    -->
+    <EditText
+        android:id="@+id/edit_room_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/room_hint"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"/>
+
+    <!--
+        ========================================================================
+        SECCIÓN 4: BOTÓN CONTINUAR
+        ========================================================================
+        Button: Widget clickeable que dispara acciones
+        
+        El evento onClick se manejará desde el código Java mediante:
+        button.setOnClickListener(new View.OnClickListener() { ... });
+    -->
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_continue"/>
+
+    <!--
+        ========================================================================
+        SECCIÓN 5: MENSAJE DE ERROR
+        ========================================================================
+        TextView para mostrar errores (inicialmente oculto)
+        
+        android:visibility="gone" -> El elemento está oculto Y no ocupa espacio
+        Otras opciones:
+        - visible: Se muestra normalmente
+        - invisible: Oculto pero OCUPA espacio
+        - gone: Oculto y NO ocupa espacio
+        
+        Cambiaremos la visibilidad desde código:
+        errorText.setVisibility(View.VISIBLE);
+        errorText.setVisibility(View.GONE);
+    -->
+    <TextView
+        android:id="@+id/txt_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"/>
+
+    <!--
+        ========================================================================
+        SECCIÓN 6: TEXTO "CHOOSE ONE" (para votación)
+        ========================================================================
+        Se mostrará cuando recibamos la respuesta del servidor.
+        Inicialmente oculto (visibility="gone").
+    -->
+    <TextView
+        android:id="@+id/txt_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_one"
+        android:visibility="gone"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!--
+        ========================================================================
+        SECCIÓN 7: CONTENEDOR DE BOTONES DE VOTACIÓN
+        ========================================================================
+        LinearLayout HORIZONTAL para los 5 botones de votación
+        
+        android:orientation="horizontal" -> Elementos en línea horizontal
+        
+        Los botones se añadirán dinámicamente desde código cuando
+        recibamos la respuesta del servidor.
+        
+        NOTA: También podríamos definir los 5 botones aquí con visibility="gone"
+        y solo cambiar su texto y visibilidad desde código.
+    -->
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <!--
+            Los 5 botones para votar.
+            android:layout_weight="1" hace que cada botón ocupe el mismo espacio.
+            Es como un "flex: 1" en CSS.
+        -->
+        <Button
+            android:id="@+id/btn_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/btn_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/btn_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/btn_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/btn_five"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"/>
+
+    </LinearLayout>
+
+    <!--
+        ========================================================================
+        SECCIÓN 8: MENSAJE DE RESULTADO DE VOTACIÓN
+        ========================================================================
+        Muestra "You have chosen X" después de votar exitosamente.
+        Inicialmente oculto.
+    -->
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+</LinearLayout>

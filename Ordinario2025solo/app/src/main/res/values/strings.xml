@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Ordinario2025solo</string>
+    <string name="arroba">"@"</string>
+    <string name="error_network">Error de conexion</string>
+
+
+    <!-- Separador entre equipos: @ -->
+
+    <!-- Separador de puntuación -->
+    <string name="score_separator">-</string>
+
+    <!-- Botones de puntuación -->
+    <string name="btn_plus_1">+1</string>
+    <string name="btn_plus_2">+2</string>
+    <string name="btn_plus_3">+3</string>
+
+    <!-- ====================================================================
+         MENSAJES DE TOAST - Puntos anotados
+         ==================================================================== -->
+    <!-- Formato: "X punto(s) más para [equipo]" -->
+    <string name="points_added_singular">%d punto más para %s</string>
+    <string name="points_added_plural">%d puntos más para %s</string>
+
+    <!-- ====================================================================
+         MENSAJES DE ERROR - HTTP 400
+         ==================================================================== -->
+    <string name="error_team_id_required">El identificador de equipo es obligatorio</string>
+    <string name="error_invalid_team_id">El equipo no juega este partido</string>
+    <string name="error_score_required">Los puntos anotados son obligatorios</string>
+    <string name="error_score_invalid">Cantidad de puntos no válida</string>
+    <string name="error_game_not_found">Partido no encontrado</string>
+</resources>

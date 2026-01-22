@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Examen Master</string>
+
+    <!-- Los botones de MainActivity -->
+
+    <string name="btn_layouts">Tema 3.2: Formulario e Intents</string>
+    <string name="btn_prefs">Tema 3.3: SharedPreferences</string>
+    <string name="btn_db">Tema 3.4: Base de Datos (GreenDAO)</string>
+    <string name="btn_list">Tema 3.5: Listas y Adaptadores</string>
+    <string name="btn_api">Anexo 1: Peticiones API REST</string>
+
+    <!-- Lo de LoginActivity -->
+
+    <string name="login_title">IDENTIFICACIÓN</string>
+    <string name="hint_usuario">Nombre de usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_entrar">ENTRAR</string>
+    <string name="err_campos_vacios">Rellena todos los campos</string>
+    <string name="err_login_incorrecto">Usuario incorrecto (Prueba admin/1234)</string>
+    <string name="msg_bienvenida">¡Bienvenido al sistema!</string>
+
+    <!-- Tema 3.2 -->
+    <string name="title_layouts">FORMULARIO DE PRUEBA</string>
+    <string name="hint_mensaje">Escribe un mensaje secreto...</string>
+    <string name="chk_opcion">Aceptar términos de examen</string>
+    <string name="btn_enviar_parametros">ENVIAR A RESULTADO</string>
+
+    <string name="title_resultado">DATOS RECIBIDOS</string>
+    <string name="lbl_mensaje_recibido">El mensaje fue: </string>
+    <string name="lbl_terminos">¿Aceptó términos?: </string>
+    <string name="btn_volver">VOLVER</string>
+
+    <!-- Tema 3.3 Shared preferences-->
+    <string name="title_prefs">AJUSTES DE USUARIO</string>
+    <string name="lbl_username_actual">Nombre guardado: </string>
+    <string name="hint_nuevo_nombre">Nuevo nombre de usuario</string>
+    <string name="btn_guardar_prefs">GUARDAR EN PREFS</string>
+    <string name="msg_prefs_guardadas">Preferencias actualizadas con éxito</string>
+
+    <!-- Tema 3.4 GreenDao y gestión de la Base de Datos-->
+
+    <string name="title_db">REGISTRO DE ACCESOS (GreenDAO)</string>
+    <string name="btn_insertar_test">Insertar Acceso de Prueba</string>
+    <string name="btn_borrar_todo">Borrar Toda la DB</string>
+    <string name="lbl_conteo">Éxitos: %1$d | Fallos: %2$d</string>
+
+    <!-- Tema 3.5-->
+
+    <string name="title_listas">HISTORIAL DE ACCESOS</string>
+    <string name="title_detalle">DETALLE DEL ACCESO</string>
+    <string name="lbl_user">Usuario: %s</string>
+    <string name="lbl_fecha">Fecha: %s</string>
+    <string name="lbl_es_valido">¿Es válido?: %s</string>
+    <string name="val_si">SÍ</string>
+    <string name="val_no">NO</string>
+
+    <!-- Tema Api Rest-->
+
+    <string name="title_api">CONEXIÓN AL SERVIDOR</string>
+    <string name="btn_test_get">Probar GET (Cargar datos)</string>
+    <string name="btn_test_post">Probar POST (Enviar Login)</string>
+    <string name="msg_conectando">Conectando con el servidor...</string>
+    <string name="err_servidor">Error de comunicación con el servidor</string>
+
+
+</resources>

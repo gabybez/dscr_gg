@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Examen 2023</string>
+
+    <!-- Formato de tiempo -->
+    <string name="time_format">%d m %d s</string>
+
+    <!-- Detalle -->
+    <string name="label_position">Puesto en la general:</string>
+    <string name="label_category_position">Puesto en la categoría:</string>
+    <string name="label_name">Nombre completo:</string>
+    <string name="label_dorsal">Dorsal:</string>
+    <string name="label_time">Tiempo:</string>
+
+    <!-- Errores -->
+    <string name="error_network">Error de red</string>
+</resources>

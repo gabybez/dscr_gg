@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU EXAMEN"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_Layouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Formulario e Intents (3.2)" />
+
+    <Button
+        android:id="@+id/btn_Prefs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Preferencias (3.3)" />
+
+    <Button
+        android:id="@+id/btn_DB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Base de Datos GreenDAO (3.4)" />
+
+    <Button
+        android:id="@+id/btn_Listas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. Listas y Adaptadores (3.5)" />
+
+    <Button
+        android:id="@+id/btn_API"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. Petición API REST (Anexo 1)" />
+
+    <Button
+        android:id="@+id/btn_Salir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT / SALIR"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF5252" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    row_user.xml - LAYOUT DE CADA FILA DEL LISTADO
+    ============================================================================
+    
+    Estructura pedida en el examen:
+    +------------------+----------+------------------+
+    | Nombre (izq)     | Icono    | Mensajes (der)   |
+    +------------------+----------+------------------+
+    
+    IMPORTANTE:
+    - El icono premium solo se muestra si el usuario es premium
+    - El color de fondo (blanco/gris) se cambia desde el Adapter según posición
+    
+    Usamos LinearLayout horizontal con 3 elementos:
+    1. TextView nombre (gravity="start", weight=1 para que ocupe espacio)
+    2. ImageView icono premium (visibility se controla desde código)
+    3. TextView mensajes (gravity="end")
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!--
+        NOMBRE - Alineado a la izquierda
+        layout_weight="1" hace que ocupe todo el espacio disponible
+        gravity="start" alinea el texto a la izquierda
+    -->
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:textSize="16sp"/>
+
+    <!--
+        ICONO PREMIUM - Centrado
+        visibility="gone" por defecto (oculto y no ocupa espacio)
+        Desde el Adapter cambiaremos a VISIBLE si es premium
+    -->
+    <ImageView
+        android:id="@+id/img_premium"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/premium"
+        android:visibility="gone"
+        android:contentDescription="Premium"/>
+
+    <!--
+        MENSAJES - Alineado a la derecha
+        gravity="end" alinea el texto a la derecha
+    -->
+    <TextView
+        android:id="@+id/txt_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="16sp"/>
+
+</LinearLayout>

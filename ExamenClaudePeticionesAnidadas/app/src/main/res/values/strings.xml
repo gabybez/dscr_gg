@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">ExamenClaudePeticionesAnidadas</string>
+    <string name="author_section">AUTOR</string>
+    <string name="btn_borrow">SOLICITAR PRESTAMO</string>
+    <string name="status_available">Disponible</string>
+    <string name="status_no_available">Prestado</string>
+    <string name="error_network">Error de conexion juas juas</string>
+    <!--  Detalle del libro  -->
+    <string name="year_label">Año: %d</string>
+    <string name="pages_label">Páginas: %d</string>
+    <string name="status_label">Estado: %s</string>
+    <string name="author_lifespan">%s (%d-%d)</string>
+    <string name="loan_success">Préstamo registrado</string>
+    <string name="error_not_available">Este libro no está disponible</string>
+
+</resources>

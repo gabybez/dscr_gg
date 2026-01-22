@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    row_game.xml - LAYOUT DE CADA FILA DEL LISTADO
+    ============================================================================
+    
+    Estructura pedida en el examen:
+    +-------+------------------+---+------------------+-------+
+    | Score |   Away Team      | @ |    Home Team     | Score |
+    +-------+------------------+---+------------------+-------+
+    |  76   | Boston Celtics   | @ |  Denver Nuggets  |  52   |
+    +-------+------------------+---+------------------+-------+
+    
+    ALINEACIÓN:
+    - Score visitante: DERECHA (pegado al nombre)
+    - Nombre visitante: DERECHA
+    - @: CENTRO
+    - Nombre local: IZQUIERDA
+    - Score local: IZQUIERDA (pegado al nombre)
+    
+    CEBREADO: El color de fondo se cambia desde el Adapter según posición par/impar
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!-- ====================================================================
+         EQUIPO VISITANTE (AWAY) - Izquierda de la pantalla
+         ==================================================================== -->
+    
+    <!-- Puntuación visitante - Alineado a la DERECHA -->
+    <TextView
+        android:id="@+id/txt_away_score"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    
+    <!-- Nombre equipo visitante - Alineado a la DERECHA, ocupa espacio con weight -->
+    <TextView
+        android:id="@+id/txt_away_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="14sp"/>
+
+    <!-- ====================================================================
+         SEPARADOR @ - Centro
+         ==================================================================== -->
+    <TextView
+        android:id="@+id/txt_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_separator"
+        android:textSize="14sp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <!-- ====================================================================
+         EQUIPO LOCAL (HOME) - Derecha de la pantalla
+         ==================================================================== -->
+    
+    <!-- Nombre equipo local - Alineado a la IZQUIERDA, ocupa espacio con weight -->
+    <TextView
+        android:id="@+id/txt_home_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="14sp"/>
+    
+    <!-- Puntuación local - Alineado a la IZQUIERDA -->
+    <TextView
+        android:id="@+id/txt_home_score"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+</LinearLayout>

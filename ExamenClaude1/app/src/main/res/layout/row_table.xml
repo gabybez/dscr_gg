@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    row_table.xml - LAYOUT DE CADA FILA DEL LISTADO
+    ============================================================================
+
+    Estructura:
+    +___________________________________________________________+
+    | Mesa 1    ●    4 personas    Disponible                  |
+    +___________________________________________________________+
+
+    - Número de mesa: izquierda
+    - Icono (verde/rojo): después del número
+    - Capacidad: centro
+    - Estado: derecha
+
+    CEBREADO: El color de fondo se cambia desde el Adapter
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!-- Número de mesa (izquierda) -->
+    <TextView
+        android:id="@+id/txt_table_number"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- Icono de estado (verde/rojo) -->
+    <ImageView
+        android:id="@+id/img_status"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+       />
+
+    <!-- Capacidad (centro, ocupa espacio restante) -->
+    <TextView
+        android:id="@+id/txt_capacity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14sp"/>
+
+    <!-- Estado: Disponible/Ocupada (derecha) -->
+    <TextView
+        android:id="@+id/txt_status"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="14sp"/>
+
+</LinearLayout>

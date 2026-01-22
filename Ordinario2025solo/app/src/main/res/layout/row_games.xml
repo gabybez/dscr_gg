@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    LAYOUT DE CADA FILA DEL LISTVIEW
+    ================================
+    Este layout define cómo se ve CADA FILA de la lista.
+    El Adapter lo "infla" para cada elemento.
+
+    Usamos LinearLayout horizontal para las 5 columnas:
+    1.Score visitante (derecha)
+    2.Nombre visitante (derecha)
+    3.arroba(centrado)
+    4.Nombre local (izquierda)
+    5.Score local (izquierda)
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rowLayout"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <!-- 1.Score visitante -->
+    <TextView
+        android:id="@+id/txt_away_score"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="14sp"/>
+
+    <!-- 2. Nombre visitante -->
+    <TextView
+        android:id="@+id/txt_away_name"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="14sp"/>
+
+    <!-- 3. arroba, weight=1 para que ocupe espacio restante -->
+    <TextView
+        android:id="@+id/txt_arroba"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/arroba"
+        android:gravity="center"
+        android:textSize="14sp"/>
+
+    <!-- 4. Nombre local -->
+    <TextView
+        android:id="@+id/txt_home_name"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="14sp"/>
+
+    <!-- 5.Score local -->
+    <TextView
+        android:id="@+id/txt_home_score"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="14sp"/>
+
+</LinearLayout>

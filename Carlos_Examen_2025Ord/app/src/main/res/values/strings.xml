@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    ============================================================================
+    strings.xml - TODOS LOS TEXTOS TRADUCIBLES
+    ============================================================================
+
+    IMPORTANTE: El enunciado dice "Todos los textos susceptibles de ser traducidos
+    deben estar como string en values."
+
+    Nunca poner textos directamente en código Java o XML (hardcoded).
+-->
+<resources>
+    <string name="app_name">Examen 2025 Baloncesto</string>
+
+    <!-- Separador entre equipos: @ -->
+    <string name="game_separator">"@"</string>
+
+    <!-- Separador de puntuación -->
+    <string name="score_separator">-</string>
+
+    <!-- Botones de puntuación -->
+    <string name="btn_plus_1">+1</string>
+    <string name="btn_plus_2">+2</string>
+    <string name="btn_plus_3">+3</string>
+
+    <!-- ====================================================================
+         MENSAJES DE TOAST - Puntos anotados
+         ==================================================================== -->
+    <!-- Formato: "X punto(s) más para [equipo]" -->
+    <string name="points_added_singular">%d punto más para %s</string>
+    <string name="points_added_plural">%d puntos más para %s</string>
+
+    <!-- ====================================================================
+         MENSAJES DE ERROR - HTTP 400
+         ==================================================================== -->
+    <string name="error_team_id_required">El identificador de equipo es obligatorio</string>
+    <string name="error_invalid_team_id">El equipo no juega este partido</string>
+    <string name="error_score_required">Los puntos anotados son obligatorios</string>
+    <string name="error_score_invalid">Cantidad de puntos no válida</string>
+    <string name="error_game_not_found">Partido no encontrado</string>
+    <string name="error_network">Error de conexión</string>
+</resources>

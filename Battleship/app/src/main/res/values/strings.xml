@@ -1,0 +1,231 @@
+<resources>
+    <string name="app_name">proyecto</string>
+
+    <!-- Pantalla de inicio -->
+    <string name="titl_bienvenida">Bienvenido</string>
+    <string name="btn_entrar">ENTRAR</string>
+    <string name="btn_registro">REGISTRO</string>
+    <string name="btn_accesos">ACCESOS</string>
+
+    <!-- Pantalla de registro -->
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_contraseña">Contraseña</string>
+    <string name="btn_crearCuenta">CREAR CUENTA</string>
+
+    <!-- Errores de formulario -->
+    <string name="err_usuario">Debes rellenar el campo "Usuario"</string>
+    <string name="err_contraseña">Debes rellenar el campo "Contraseña"</string>
+    <string name="err_usuarioycontraseña">Debes rellenar el campo "Usuario" y el campo "Contraseña"</string>
+    <string name="err_rellena_ambos">Completa usuario y contraseña</string>
+    <string name="session_expired">Sesión caducada. Vuelve a iniciar sesión.</string>
+
+    <!-- Mensajes de éxito / info -->
+    <string name="msg_cuenta_creada">Cuenta creada correctamente</string>
+    <string name="msg_registro_ok">Registro correcto</string>
+
+    <!-- Errores validados por backend -->
+    <string name="err_invalid_username">El nombre de usuario no es válido (mínimo 4 caracteres)</string>
+    <string name="err_invalid_password">La contraseña no es válida (mínimo 4 caracteres)</string>
+    <string name="err_username_not_available">El nombre de usuario ya existe</string>
+    <string name="err_invalid_credentials">Usuario o contraseña incorrectos.</string>
+
+    <!-- Pantalla de entrar -->
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="err_contraseñaIncorrecta">La contraseña es incorrecta</string>
+
+
+    <!-- Errores genéricos de red / servidor -->
+    <string name="err_desconocido">Error desconocido en el registro</string>
+    <string name="err_conexion">Error de conexión</string>
+    <string name="err_servidor">No se pudo conectar con el servidor</string>
+    <string name="err_timeout">Tiempo de espera agotado</string>
+    <string name="err_sin_internet">Sin conexión a Internet</string>
+
+    <!-- Errores genéricos de parseo -->
+    <string name="err_preparando_peticion">Error preparando la petición</string>
+    <string name="err_parseando_login">Error parseando la respuesta de login</string>
+    <string name="err_parseando_registro">Error parseando la respuesta de registro</string>
+    <string name="err_resp_login_invalida">Respuesta de login inválida</string>
+    <string name="err_resp_registro_invalida">Respuesta de registro inválida</string>
+    <string name="err_login_fallido">Login fallido</string>
+    <string name="err_registro_fallido">Registro fallido</string>
+    <string name="reject_failed">No se pudo rechazar (%1$d)</string>
+
+    <!-- Sesión -->
+    <string name="err_sesion_caducada">Sesión caducada</string>
+    <string name="err_sesion_caducada_relogin">Sesión caducada. Vuelve a iniciar sesión.</string>
+
+    <!-- MAIN -->
+    <string name="btn_new_game">NEW GAME</string>
+    <string name="btn_partidas_on">PARTIDAS EN CURSO</string>
+    <string name="btn_partidas_off">PARTIDAS FINALIZADAS</string>
+    <string name="btn_salir">LOG OUT</string>
+    <string name="btn_invitaciones">INVITACIONES</string>
+
+    <!-- CREAR PARTIDA -->
+    <string name="et_Buscar_Usuario">Buscar usuario...</string>
+    <string name="btn_Buscar">BUSCAR</string>
+    <string name="btn_Invitar">INVITAR</string>
+    <string name="err_usuario_vacio">Escribe el usuario a invitar</string>
+    <string name="msg_invitacion_enviada">Invitación enviada a %1$s</string>
+    <string name="invite_sent_short">Invitación enviada</string>
+    <string name="invite_failed">No se pudo enviar la invitación (%1$d)</string>
+
+    <!-- Endpoints -->
+    <string name="api_login_session">https://api.battleship.tatai.es/v2/session</string>
+    <string name="api_register_user">https://api.battleship.tatai.es/v2/user</string>
+    <string name="api_challenge">https://api.battleship.tatai.es/v2/challenge</string>
+    <string name="api_game_invite">https://api.battleship.tatai.es/v2/game/invite</string>
+    <string name="api_game_base">https://api.battleship.tatai.es/v2/game/</string>
+    <string name="api_game_active">https://api.battleship.tatai.es/v2/game/active</string>
+    <string name="api_game_inactive">https://api.battleship.tatai.es/v2/game/inactive</string>
+
+    <!-- Textos UI Invitaciones -->
+    <string name="title_invitaciones">Invitaciones</string>
+    <string name="btn_aceptar">ACEPTAR</string>
+    <string name="btn_rechazar">RECHAZAR</string>
+    <string name="btn_cancelar">CANCELAR</string>
+    <string name="label_esperando_otro">Enviada por ti (esperando al rival)</string>
+    <string name="label_debes_responder">Te han invitado (tú decides)</string>
+    <string name="msg_aceptada">Invitación aceptada</string>
+    <string name="msg_rechazada">Invitación rechazada</string>
+    <string name="msg_cancelada">Invitación cancelada</string>
+    <string name="msg_sin_pendientes">No hay invitaciones pendientes</string>
+    <string name="err_listar_invitaciones">No se pudieron cargar las invitaciones</string>
+    <string name="err_parseando_aceptar">Error parseando aceptación</string>
+    <string name="err_aceptar">No se pudo aceptar (%1$d)</string>
+    <string name="err_parseando_rechazar">Error parseando rechazo</string>
+    <string name="err_rechazar">No se pudo rechazar (%1$d)</string>
+    <string name="invite_sent">Invitación enviada a %1$s</string>
+    <string name="invite_user_prompt">Escribe el usuario a invitar</string>
+
+    <!-- Títulos de pantallas -->
+    <string name="title_games_active">Partidas activas</string>
+    <string name="title_games_inactive">Partidas finalizadas</string>
+    <string name="title_game_detail">Partida #%1$d</string>
+
+    <!-- Mensajes vacíos / error listas -->
+    <string name="list_empty_generic">No hay partidas para mostrar</string>
+    <string name="list_empty_active">No hay partidas activas</string>
+    <string name="list_empty_inactive">No hay partidas finalizadas</string>
+    <string name="list_error_parse">Error parseando la respuesta</string>
+    <string name="list_error_load">No se pudieron cargar (%1$d)</string>
+
+    <!-- Fila (row) -->
+    <string name="row_title_fallback">Juego #%1$d</string>
+    <string name="state_waiting">waiting</string>
+    <string name="state_placing">placing</string>
+    <string name="state_started">started</string>
+    <string name="state_finished">finished</string>
+    <string name="state_cancelled">cancelled</string>
+    <string name="row_sub_waiting_mine">• debes responder</string>
+    <string name="row_sub_waiting_theirs">• esperando al rival</string>
+    <string name="row_sub_placing_mine">• coloca tus barcos</string>
+    <string name="row_sub_placing_theirs">• rival colocando</string>
+    <string name="row_sub_started_mine">• tu turno</string>
+    <string name="row_sub_started_theirs">• turno del rival</string>
+
+    <!-- Detalle -->
+    <string name="detalle_rival">Rival: %1$s</string>
+    <string name="detalle_estado">Estado: %1$s</string>
+    <string name="detalle_turno_tuyo">Tu turno - ¡Dispara!</string>
+    <string name="detalle_turno_rival">Turno del rival - Esperando…</string>
+    <string name="detalle_creada">Creada: %1$s</string>
+    <string name="detalle_actualizada">Actualizada: %1$s</string>
+
+    <!-- Estados del juego en detalle -->
+    <string name="detalle_coloca_barcos">Coloca los barcos que faltan</string>
+    <string name="detalle_coloca_barcos_count">Barcos colocados: %1$d/%2$d</string>
+    <string name="detalle_todos_colocados">¡Todos los barcos colocados! Esperando al rival…</string>
+    <string name="detalle_esperando_rival_colocar">Esperando a que el rival termine de colocar</string>
+    <string name="detalle_partida_finalizada">Partida finalizada</string>
+    <string name="detalle_ganaste">¡GANASTE!</string>
+    <string name="detalle_perdiste">Perdiste</string>
+
+    <!-- Tableros -->
+    <string name="label_my_board">MI TABLERO</string>
+    <string name="label_enemy_board">TABLERO RIVAL</string>
+    <string name="btn_show_enemy_board">Ver tablero rival</string>
+    <string name="btn_show_my_board">Ver mi tablero</string>
+
+    <!-- Mensajes colocar/disparar -->
+    <string name="msg_ship_colocado">Barco colocado</string>
+    <string name="err_parseando_place">Error parseando respuesta de colocar</string>
+    <string name="err_place_ship">No se pudo colocar (%1$d)</string>
+
+    <string name="msg_shot_ok">Disparo: %1$s</string>
+    <string name="err_parseando_shoot">Error parseando respuesta de disparo</string>
+    <string name="err_shoot">No se pudo disparar (%1$d)</string>
+
+    <!-- Game detail -->
+    <string name="btn_colocar">Colocar barco</string>
+    <string name="hint_board">PLACING: toca celdas y pulsa Colocar. STARTED: cambia al tablero rival y toca para disparar.</string>
+    <string name="game_title_fallback">Juego #%1$d</string>
+
+    <!-- Spinners -->
+    <string name="orientation_h">Horizontal</string>
+    <string name="orientation_v">Vertical</string>
+
+    <!-- Mensajes de validación placing -->
+    <string name="err_no_selection">Selecciona las celdas para el barco</string>
+    <string name="err_selection_length">La selección no coincide con el tamaño del barco</string>
+    <string name="err_selection_length_detail">Necesitas %1$d celdas</string>
+    <string name="err_selection_shape">La selección debe ser en línea recta y consecutiva</string>
+    <string name="err_not_your_turn">No es tu turno</string>
+    <string name="err_cell_already_shot">Esa celda ya fue disparada</string>
+    <string name="err_cell_has_ship">Esa celda ya tiene un barco</string>
+    <string name="err_ship_type_already_placed">Ese tipo ya está colocado</string>
+    <string name="err_select_ship_type">Selecciona un tipo de barco</string>
+    <string name="err_shoot_own_board">Cambia al tablero rival para disparar</string>
+
+    <!-- Perfil -->
+    <string name="btn_perfil">PERFIL</string>
+    <string name="btn_refresh">REFRESCAR</string>
+    <string name="btn_enemy_profile">VER PERFIL RIVAL</string>
+    <string name="title_profile">Mi perfil</string>
+    <string name="title_profile_user">Perfil de %1$s</string>
+    <string name="profile_stats_title">Estadísticas</string>
+    <string name="profile_created_at">Registrado: %1$s</string>
+    <string name="profile_games">Partidas jugadas: %1$d</string>
+    <string name="profile_wins">Victorias: %1$d</string>
+    <string name="profile_losses">Derrotas: %1$d</string>
+    <string name="profile_win_rate">Ratio de victorias: %1$d%%</string>
+    <string name="profile_wins_surrender">Victorias por rendición: %1$d</string>
+    <string name="profile_losses_surrender">Derrotas por rendición: %1$d</string>
+    <string name="err_profile_no_user">No se pudo determinar el usuario</string>
+    <string name="err_profile_parse">Error parseando el perfil</string>
+    <string name="err_profile_load">No se pudo cargar el perfil (%1$d)</string>
+
+    <!-- Rendirse -->
+    <string name="surrender_title">Rendirse</string>
+    <string name="surrender_confirm">¿Estás seguro de que quieres rendirte? Perderás la partida.</string>
+    <string name="btn_surrender">RENDIRSE</string>
+    <string name="msg_surrendered">Te has rendido</string>
+    <string name="err_surrender">No se pudo rendirse (%1$d)</string>
+    <string name="err_no_enemy">No hay información del rival</string>
+
+    <!-- API -->
+    <string name="api_user_base">https://api.battleship.tatai.es/v2/user/</string>
+
+    <!-- Emojis -->
+    <string name="espada">⚔️</string>
+    <string name ="barco">🚢</string>
+    <string name="ancla">⚓</string>
+    <string name="battleship">BATTLESHIP</string>
+    <string name="mando">🎮</string>
+    <string name="trofeo">🏆</string>
+    <string name="calavera">💀</string>
+    <string name="estadisticas">📊</string>
+    <string name="naval">Naval Combat</string>
+
+    <!-- Búsqueda -->
+    <string name="hint_search_user">Buscar por nombre de rival…</string>
+    <string name="list_empty_search">No se encontraron partidas</string>
+
+    <!-- Avisos de resultado -->
+    <string name="dialog_win_title">¡Victoria!</string>
+    <string name="dialog_win_message">¡Felicidades! Has hundido toda la flota enemiga.</string>
+    <string name="dialog_lose_title">Derrota</string>
+    <string name="dialog_lose_message">Tu flota ha sido hundida. ¡Mejor suerte la próxima vez!</string>
+    <string name="btn_ok">Aceptar</string>
+</resources>

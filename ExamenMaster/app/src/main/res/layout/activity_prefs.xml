@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_prefs"
+        android:textSize="22sp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tv_NombreActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_username_actual"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/et_NuevoNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nuevo_nombre"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_GuardarPrefs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_guardar_prefs"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

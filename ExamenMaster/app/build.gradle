@@ -1,0 +1,67 @@
+// build.gradle(App)
+buildscript {
+    dependencies {
+        // Para usar greenDAO
+        classpath('org.greenrobot:greendao-gradle-plugin:3.3.1')
+    }
+}
+
+plugins {
+    alias(libs.plugins.android.application)
+    // Plugin para Notificaciones Push (Firebase) comentar si no se usa
+    //id 'com.google.gms.google-services'
+}
+
+apply plugin: 'org.greenrobot.greendao' //
+
+android {
+    namespace 'es.unavarra.tlm.examenmaster'
+    compileSdk 36 // Ajustado a tus archivos actuales
+
+    defaultConfig {
+        applicationId "es.unavarra.tlm.examenmaster"
+        minSdk 30
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    // TEMA 3.4: Configuración de la base de datos
+    greendao {
+        schemaVersion 1
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+
+    // TEMA 3.4: Base de Datos (GreenDAO)
+    implementation 'org.greenrobot:greendao:3.3.0'
+
+    // ANEXO 1: Peticiones REST
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+
+    // ANEXO 2: Notificaciones Push (Firebase)
+   // implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
+    //implementation 'com.google.firebase:firebase-messaging'
+
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

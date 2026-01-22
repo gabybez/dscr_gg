@@ -1,0 +1,45 @@
+/*
+ * ============================================================================
+ * build.gradle - EXAMEN 2025
+ * ============================================================================
+ * 
+ * DEPENDENCIAS NECESARIAS:
+ * - AsyncHttpClient: Peticiones HTTP asíncronas (GET, POST, PUT)
+ * - Gson: Convertir JSON <-> Objetos Java
+ */
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'es.unavarra.tlm.examen_25_XX'
+    compileSdk 33
+    
+    defaultConfig {
+        applicationId "es.unavarra.tlm.examen_25_XX"
+        minSdk 30
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    
+    // ========================================================================
+    // AsyncHttpClient - Para peticiones HTTP (GET, POST, PUT)
+    // ========================================================================
+    implementation 'com.loopj.android:android-async-http:1.4.11'
+    
+    // ========================================================================
+    // Gson - Para convertir JSON a objetos Java y viceversa
+    // ========================================================================
+    implementation 'com.google.code.gson:gson:2.10.1'
+}

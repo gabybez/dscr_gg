@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    RECURSO: strings.xml
+    ============================================================================
+    IMPORTANTE: Todos los textos de la aplicación deben estar aquí.
+
+    RAZONES:
+    1. Internacionalización: Se pueden crear traducciones fácilmente
+       - res/values/strings.xml -> Idioma por defecto
+       - res/values-es/strings.xml -> Español
+       - res/values-en/strings.xml -> Inglés
+
+    2. Mantenibilidad: Un solo lugar para cambiar textos
+
+    3. Buenas prácticas: Android Studio marca como warning los textos hardcodeados
+
+    CÓMO USAR EN XML:
+    android:text="@string/app_name"
+
+    CÓMO USAR EN JAVA:
+    String text = getResources().getString(R.string.app_name);
+    O directamente en setText:
+    textView.setText(R.string.app_name);
+    ============================================================================
+-->
+<resources>
+    <!-- Nombre de la aplicación (aparece en el título) -->
+    <string name="app_name">Examen 2022</string>
+
+    <!-- Textos de la pantalla de selección de sala -->
+    <string name="room_description">Please type the number of the room</string>
+    <string name="room_hint">Room number</string>
+    <string name="btn_continue">CONTINUE</string>
+
+    <!-- Textos de la sección de votación -->
+    <string name="choose_one">Choose one</string>
+
+    <!-- Mensajes de error -->
+    <!-- Estos son los errores que puede devolver el servidor -->
+    <string name="error_empty_room">Room number is required</string>
+    <string name="error_room_required">Room number is required</string>
+    <string name="error_invalid_room">Invalid room value</string>
+    <string name="error_vote_required">Vote is required</string>
+    <string name="error_invalid_vote">Invalid vote value</string>
+    <string name="error_not_number">Please enter a valid number</string>
+    <string name="error_network">Network error. Please try again.</string>
+
+    <!-- Mensaje de resultado -->
+    <!-- %d se reemplazará por el número elegido usando String.format() -->
+    <string name="result_message">You have chosen %d</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    LAYOUT DE CADA FILA DEL LISTVIEW
+    ================================
+    Este layout define cómo se ve CADA FILA de la lista.
+    El Adapter lo "infla" para cada elemento.
+
+    Usamos LinearLayout horizontal para las 5 columnas:
+    1. Puesto general (centrado)
+    2. Puesto categoría
+    3. Nombre completo (izquierda)
+    4. Dorsal (centrado)
+    5. Tiempo (derecha)
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <!-- 1. Puesto general - CENTRADO -->
+    <TextView
+        android:id="@+id/txt_position"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <!-- 2. Puesto categoría -->
+    <TextView
+        android:id="@+id/txt_category_position"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14sp"/>
+
+    <!-- 3. Nombre completo - ALINEADO IZQUIERDA, weight=1 para que ocupe espacio restante -->
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="14sp"/>
+
+    <!-- 4. Dorsal - CENTRADO -->
+    <TextView
+        android:id="@+id/txt_dorsal"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14sp"/>
+
+    <!-- 5. Tiempo - ALINEADO DERECHA -->
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="14sp"/>
+
+</LinearLayout>

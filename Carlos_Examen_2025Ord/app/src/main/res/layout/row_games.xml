@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    LAYOUT DE CADA FILA DEL LISTVIEW
+    ================================
+    Este layout define cómo se ve CADA FILA de la lista.
+    El Adapter lo "infla" para cada elemento.
+
+    Usamos LinearLayout horizontal para las 5 columnas:
+    1. Away Score (izquierda)
+    2. Away Name (izquierda)
+    3. Separador @  (centrado)
+    4. Home Name (derecha)
+    5. Home Score (derecha)
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <!-- 1. Away Score (izquierda) -->
+    <TextView
+        android:id="@+id/txt_away_score"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
+    <!-- 2. Away Name (izquierda)-->
+    <TextView
+        android:id="@+id/txt_away_name"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="14sp"/>
+
+    <!-- 3.Separador @  (centrado) weight=1 para que ocupe espacio restante -->
+    <TextView
+        android:id="@+id/txt_separator"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/game_separator"
+        android:textSize="14sp"/>
+
+    <!-- 4. Home Name (derecha) -->
+    <TextView
+        android:id="@+id/txt_home_name"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="14sp"/>
+
+    <!-- 5. Home Score (derecha) -->
+    <TextView
+        android:id="@+id/txt_home_score"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="14sp"/>
+
+</LinearLayout>

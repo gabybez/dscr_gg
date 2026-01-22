@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    activity_main.xml - Layout principal con ListView
+    ============================================================================
+    Solo contiene un ListView que ocupará toda la pantalla.
+    El contenido se llenará dinámicamente con el Adapter.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+        ListView: Muestra una lista vertical de elementos.
+        - Cada elemento es una "fila" o "celda"
+        - El Adapter controla qué se muestra en cada fila
+    -->
+    <ListView
+        android:id="@+id/list_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    strings.xml - TODOS LOS TEXTOS AQUÍ
+    ============================================================================
+    IMPORTANTE: El enunciado dice que todos los textos deben estar en strings.xml
+    Nunca poner textos directamente en el código o layouts (hardcoded).
+-->
+<resources>
+    <string name="app_name">Examen 2017</string>
+    <string name="error_network">Error de conexión</string>
+</resources>

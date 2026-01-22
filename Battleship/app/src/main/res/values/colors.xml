@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales - Tema náutico/militar -->
+    <color name="navy_dark">#0D1B2A</color>
+    <color name="navy_medium">#1B263B</color>
+    <color name="navy_light">#415A77</color>
+    <color name="steel_blue">#778DA9</color>
+    <color name="silver">#E0E1DD</color>
+
+    <!-- Colores de acción -->
+    <color name="action_primary">#1E88E5</color>
+    <color name="action_primary_dark">#1565C0</color>
+    <color name="action_danger">#D32F2F</color>
+    <color name="action_danger_dark">#B71C1C</color>
+    <color name="action_success">#388E3C</color>
+    <color name="action_warning">#F57C00</color>
+
+    <!-- Colores del tablero -->
+    <color name="board_water">#1565C0</color>
+    <color name="board_water_dark">#0D47A1</color>
+    <color name="board_ship">#455A64</color>
+    <color name="board_ship_placed">#37474F</color>
+    <color name="board_selected">#FFD54F</color>
+    <color name="board_hit">#D32F2F</color>
+    <color name="board_miss">#ECEFF1</color>
+    <color name="board_received_hit">#FF5722</color>
+    <color name="board_received_miss">#90A4AE</color>
+    <color name="board_border">#0D47A1</color>
+
+    <!-- Textos -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0BEC5</color>
+    <color name="text_dark">#90A4AE</color>
+    <color name="text_accent">#4FC3F7</color>
+
+    <!-- Fondos -->
+    <color name="background_dark">#0D1B2A</color>
+    <color name="background_card">#1B263B</color>
+    <color name="background_input">#263238</color>
+
+    <!-- Estados -->
+    <color name="state_waiting">#FFA726</color>
+    <color name="state_placing">#42A5F5</color>
+    <color name="state_started">#66BB6A</color>
+    <color name="state_finished">#78909C</color>
+    <color name="state_win">#4CAF50</color>
+    <color name="state_lose">#F44336</color>
+</resources>
